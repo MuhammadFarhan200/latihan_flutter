@@ -20,20 +20,19 @@ class TestListView extends StatelessWidget {
                   flex: 2,
                   child: Row(
                     children: [
-                      Flexible(
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                          elevation: 3,
-                          margin: const EdgeInsets.symmetric(horizontal: 20),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(100),
-                            child: Image.network(
-                              width: 80,
-                              'https://images.generated.photos/xWjqepEJ4oaqeG10kJvKd4CuiwV3yw1a2SqbXLwf2D0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI3NzU2LmpwZw.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                      Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        elevation: 3,
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: Image.network(
+                            width: 80,
+                            height: 80,
+                            'https://images.generated.photos/xWjqepEJ4oaqeG10kJvKd4CuiwV3yw1a2SqbXLwf2D0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI3NzU2LmpwZw.jpg',
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -47,20 +46,24 @@ class TestListView extends StatelessWidget {
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
                               ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                             ),
                             const SizedBox(height: 5),
                             Row(
                               children: const [
                                 Icon(
                                   CupertinoIcons.location_solid,
-                                  size: 16,
+                                  size: 18,
                                 ),
-                                SizedBox(width: 5),
+                                SizedBox(width: 3),
                                 Text(
                                   'Rancamanyar City',
                                   style: TextStyle(
                                     fontSize: 16,
                                   ),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                               ],
                             ),
@@ -70,23 +73,20 @@ class TestListView extends StatelessWidget {
                     ],
                   ),
                 ),
-                Flexible(
-                  flex: 1,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
-                      Icon(
-                        CupertinoIcons.bell,
-                        size: 30,
-                      ),
-                      SizedBox(width: 20),
-                      Icon(
-                        CupertinoIcons.search,
-                        size: 30,
-                      ),
-                      SizedBox(width: 20),
-                    ],
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: const [
+                    Icon(
+                      CupertinoIcons.bell,
+                      size: 30,
+                    ),
+                    SizedBox(width: 7),
+                    Icon(
+                      CupertinoIcons.search,
+                      size: 30,
+                    ),
+                    SizedBox(width: 20),
+                  ],
                 ),
               ],
             ),
