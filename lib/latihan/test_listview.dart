@@ -26,7 +26,7 @@ class TestListView extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(100),
                           ),
-                          elevation: 0,
+                          elevation: 3,
                           margin: const EdgeInsets.symmetric(horizontal: 20),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
@@ -74,7 +74,7 @@ class TestListView extends StatelessWidget {
             const SizedBox(height: 40),
             Container(
               height: 28,
-              color: const Color.fromARGB(124, 207, 207, 207),
+              color: const Color.fromARGB(121, 191, 201, 199),
             ),
             const SizedBox(height: 30),
             const Padding(
@@ -99,7 +99,7 @@ class TestListView extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    elevation: 0,
+                    elevation: 3,
                     margin: const EdgeInsets.only(right: 15),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(100),
@@ -116,7 +116,7 @@ class TestListView extends StatelessWidget {
             const SizedBox(height: 40),
             Container(
               height: 28,
-              color: const Color.fromARGB(124, 207, 207, 207),
+              color: const Color.fromARGB(121, 191, 201, 199),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 20, top: 30),
@@ -178,7 +178,7 @@ class TestListView extends StatelessWidget {
             const SizedBox(height: 40),
             Container(
               height: 28,
-              color: const Color.fromARGB(124, 207, 207, 207),
+              color: const Color.fromARGB(121, 191, 201, 199),
             ),
             const SizedBox(height: 10),
             const Padding(
