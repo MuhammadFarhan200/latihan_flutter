@@ -21,8 +21,10 @@ class ListViewBuilderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) {
-        return Card(
+        return Container(
+          color: Colors.blue[100 * (index % 9)],
           child: Padding(
             padding: const EdgeInsets.all(15),
             child: Text(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/latihan/latihan-listview.dart';
+import 'package:latihan_flutter/latihan/latihan_listview.dart';
+import 'package:latihan_flutter/latihan/test_listview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,35 +9,34 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    var myAppbar = AppBar(
+      title: const Text(
+        'Product List',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
+      centerTitle: true,
+      flexibleSpace: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 80, 89, 133),
+              Color.fromARGB(255, 118, 39, 237),
+              Color.fromARGB(255, 0, 42, 255),
+            ],
+          ),
+        ),
+      ),
+    );
     return MaterialApp(
       title: 'Latihan Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Quicksand',
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Product List',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 80, 89, 133),
-                  Color.fromARGB(255, 118, 39, 237),
-                  Color.fromARGB(255, 0, 42, 255),
-                ],
-              ),
-            ),
-          ),
-        ),
-        body: LatihanListView(),
+      home: const Scaffold(
+        body: TestListView(),
       ),
     );
   }
