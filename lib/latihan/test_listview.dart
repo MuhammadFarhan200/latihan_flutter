@@ -13,7 +13,7 @@ class TestListView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
             Row(
               children: [
                 Flexible(
@@ -21,7 +21,6 @@ class TestListView extends StatelessWidget {
                   child: Row(
                     children: [
                       Flexible(
-                        flex: 1,
                         child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(100),
@@ -31,21 +30,41 @@ class TestListView extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(100),
                             child: Image.network(
-                              width: 100,
+                              width: 80,
                               'https://images.generated.photos/xWjqepEJ4oaqeG10kJvKd4CuiwV3yw1a2SqbXLwf2D0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI3NzU2LmpwZw.jpg',
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
                       ),
-                      const Flexible(
-                        flex: 2,
-                        child: Text(
-                          'Hello World',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
+                      Flexible(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Hello World',
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 5),
+                            Row(
+                              children: const [
+                                Icon(
+                                  CupertinoIcons.location_solid,
+                                  size: 16,
+                                ),
+                                SizedBox(width: 5),
+                                Text(
+                                  'Rancamanyar City',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -71,7 +90,7 @@ class TestListView extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
             Container(
               height: 28,
               color: const Color.fromARGB(121, 191, 201, 199),
