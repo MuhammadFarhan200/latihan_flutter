@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_flutter/latihan/latihan_object.dart';
+import 'package:flutter/cupertino.dart';
 
 class TestListView extends StatelessWidget {
   const TestListView({Key? key}) : super(key: key);
@@ -13,8 +14,81 @@ class TestListView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 40),
+            Row(
+              children: [
+                Flexible(
+                  flex: 2,
+                  child: Row(
+                    children: [
+                      Flexible(
+                        flex: 1,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                          elevation: 0,
+                          margin: const EdgeInsets.symmetric(horizontal: 20),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100),
+                            child: Image.network(
+                              width: 100,
+                              'https://images.generated.photos/xWjqepEJ4oaqeG10kJvKd4CuiwV3yw1a2SqbXLwf2D0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI3NzU2LmpwZw.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const Flexible(
+                        flex: 2,
+                        child: Text(
+                          'Hello World',
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Flexible(
+                  flex: 1,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: const [
+                      Icon(
+                        Icons.notifications,
+                        size: 30,
+                      ),
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.search,
+                        size: 30,
+                      ),
+                      SizedBox(width: 20),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 40),
+            Container(
+              height: 28,
+              color: const Color.fromARGB(124, 207, 207, 207),
+            ),
+            const SizedBox(height: 30),
+            const Padding(
+              padding: EdgeInsets.only(left: 20, bottom: 15),
+              child: Text(
+                'Friends',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             SizedBox(
-              height: 100,  
+              height: 100,
               child: ListView.builder(
                 padding: const EdgeInsets.only(left: 20, right: 5),
                 shrinkWrap: true,
@@ -38,6 +112,11 @@ class TestListView extends StatelessWidget {
                   );
                 },
               ),
+            ),
+            const SizedBox(height: 40),
+            Container(
+              height: 28,
+              color: const Color.fromARGB(124, 207, 207, 207),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 20, top: 30),
@@ -96,6 +175,12 @@ class TestListView extends StatelessWidget {
                 },
               ),
             ),
+            const SizedBox(height: 40),
+            Container(
+              height: 28,
+              color: const Color.fromARGB(124, 207, 207, 207),
+            ),
+            const SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.only(left: 20, top: 20),
               child: Text(
@@ -147,7 +232,7 @@ class TestListView extends StatelessWidget {
                 },
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 40),
           ],
         ),
       ),

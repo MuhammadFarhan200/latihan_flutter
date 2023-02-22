@@ -33,10 +33,6 @@ final List<Person> person = [
   ),
   Person(
     photo:
-        'https://images.generated.photos/xWjqepEJ4oaqeG10kJvKd4CuiwV3yw1a2SqbXLwf2D0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDI3NzU2LmpwZw.jpg',
-  ),
-  Person(
-    photo:
         'https://images.generated.photos/icGTRLCxEx7x5ldUgYZjce8DUy_GF2EX5H45hTdKW3Y/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzYzMjg1LmpwZw.jpg',
   ),
   Person(

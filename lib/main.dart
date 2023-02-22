@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/latihan/latihan_listview.dart';
 import 'package:latihan_flutter/latihan/test_listview.dart';
 
 void main() {
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var myAppbar = AppBar(
+    AppBar myAppbar = AppBar(
       title: const Text(
         'Product List',
         style: TextStyle(fontWeight: FontWeight.bold),
