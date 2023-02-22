@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/tugas.dart';
+import 'package:latihan_flutter/latihan/latihan-listview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,23 +20,23 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Latihan Flutter',
+            'Product List',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
-            flexibleSpace: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 80, 89, 133),
-                    Color.fromARGB(255, 118, 39, 237),
-                    Color.fromARGB(255, 0, 42, 255),
-                  ],
-                ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 80, 89, 133),
+                  Color.fromARGB(255, 118, 39, 237),
+                  Color.fromARGB(255, 0, 42, 255),
+                ],
               ),
             ),
+          ),
         ),
-        body: const TugasWidget(),
+        body: LatihanListView(),
       ),
     );
   }

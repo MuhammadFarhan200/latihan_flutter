@@ -9,23 +9,23 @@ class RowWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           color: Colors.blueAccent,
-          child: FlutterLogo(
+          child: const FlutterLogo(
             size: 48,
           ),
         ),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           color: Colors.amberAccent,
-          child: FlutterLogo(
+          child: const FlutterLogo(
             size: 48,
           ),
         ),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           color: Colors.deepOrange,
-          child: FlutterLogo(
+          child: const FlutterLogo(
             size: 48,
           ),
         ),

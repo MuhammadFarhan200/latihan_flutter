@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class TugasWidget extends StatelessWidget {
@@ -174,6 +172,7 @@ class TugasWidget extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 20),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
