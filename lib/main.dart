@@ -10,9 +10,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppBar myAppbar = AppBar(
+    return MaterialApp(
+      title: 'Latihan Flutter',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Quicksand',
+      ),
+      home: const Scaffold(
+        body: TestListView(),
+      ),
+    );
+  }
+}
+
+class MyAppBar extends StatelessWidget with PreferredSizeWidget {
+  const MyAppBar({Key? key}) : super(key: key);
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
       title: const Text(
-        'Product List',
+        'Latihan Flutter',
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
       centerTitle: true,
@@ -28,23 +49,11 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-    return MaterialApp(
-      title: 'Latihan Flutter',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Quicksand',
-      ),
-      home: const Scaffold(
-        body: TestListView(),
-      ),
-    );
   }
 }
 
 class HelloWidget extends StatelessWidget {
-  const HelloWidget({
-    Key? key,
-  }) : super(key: key);
+  const HelloWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

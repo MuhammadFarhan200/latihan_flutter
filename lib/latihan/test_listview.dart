@@ -57,12 +57,12 @@ class TestListView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: const [
                       Icon(
-                        Icons.notifications,
+                        CupertinoIcons.bell,
                         size: 30,
                       ),
                       SizedBox(width: 20),
                       Icon(
-                        Icons.search,
+                        CupertinoIcons.search,
                         size: 30,
                       ),
                       SizedBox(width: 20),
@@ -142,7 +142,7 @@ class TestListView extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    elevation: 5,
+                    elevation: 3,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: Column(
@@ -153,7 +153,7 @@ class TestListView extends StatelessWidget {
                             height: 200,
                             fit: BoxFit.cover,
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 15),
                           Text(
                             restaurents[index].name,
                             style: const TextStyle(
@@ -165,7 +165,7 @@ class TestListView extends StatelessWidget {
                           Text(
                             restaurents[index].address,
                             style: const TextStyle(
-                              fontSize: 14,
+                              fontSize: 16,
                             ),
                           ),
                         ],
