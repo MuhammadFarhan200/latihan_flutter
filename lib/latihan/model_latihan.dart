@@ -54,7 +54,7 @@ final List<Restaurents> restaurents = [
     name: 'Restaurent One',
     address: 'Restaurent Address One',
     photo:
-        'assets/images/restaurant-1.png',
+        'https://img.freepik.com/free-photo/tasty-cup-coffee-new-delicious-mini-cakes-with-different-shapes-wooden-table-coffee-shop_482257-19866.jpg',
   ),
   Restaurents(
     name: 'Restaurent Two',

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_flutter/latihan/latihan_object.dart';
+import 'package:latihan_flutter/latihan/model_latihan.dart';
 import 'package:flutter/cupertino.dart';
 
 class TestListView extends StatelessWidget {
@@ -41,7 +41,7 @@ class TestListView extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              'Hello World',
+                              'Hello Flutter',
                               style: TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
@@ -99,7 +99,7 @@ class TestListView extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 20, bottom: 15),
               child: Text(
-                'Friends',
+                'Chefs',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
